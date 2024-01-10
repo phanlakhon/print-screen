@@ -1,0 +1,67 @@
+$primary: #00964c;
+$secondary: #141414;
+$success: #e8f5e9;
+$warning: #ff6f00;
+$danger: #f44336;
+
+//font weight
+$light: 300;
+$normal: normal;
+$medium: 500;
+$bold: bold;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+//font family
+// $font_light: 'IBMPlexSansThai-Light';
+// $font_regular: 'IBMPlexSansThai-Regular';
+// $font_bold: 'IBMPlexSansThai-Bold' !important;
+// $font_medium: 'IBMPlexSansThai-Medium';
+// $font_semibold: 'IBMPlexSansThai-SemiBold';
+
+// Up
+@mixin sm-up {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+@mixin md-up {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+@mixin lg-up {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+@mixin xl-up {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+
+// down
+@mixin sm-down {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+@mixin md-down {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+@mixin lg-down {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+@mixin xl-down {
+  @media (max-width: $xl) {
+    @content;
+  }
+}
